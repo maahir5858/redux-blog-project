@@ -17,7 +17,7 @@ function ReactionButtons({ post }) {
             key={name}
             className="reactionButton"
             onClick={() => dispatch(addReaction({ postId: post.id, reaction: name }))}
-            >
+        >
             {emoji}{post.reactions[name]}
         </button>
     ))
